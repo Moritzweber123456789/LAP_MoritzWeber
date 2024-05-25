@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DVDs ausleihen</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">DVDs ausleihen</h1>
+        <form method="POST" action="verleih_php.php">
+            <div class="form-group">
+                <label for="kunden_id">KundenID:</label>
+                <input type="text" class="form-control" id="kunden_id" name="kunden_id" required>
+            </div>
+            <div class="form-group">
+                <label for="dvd_id">DVDID:</label>
+                <input type="text" class="form-control" id="dvd_id" name="dvd_id" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Ausleihen</button>
+        </form>
+    </div>
+</body>
+</html>
